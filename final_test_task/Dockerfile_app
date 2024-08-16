@@ -9,9 +9,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 RUN apt-get update && apt-get install -y postgresql-client
 
-CMD ["sh", "-c", "python etl.py && python execute_sql.py"]
+# CMD ["sh", "-c", "python etl.py && python execute_sql.py"]
 
-# CMD ["python", "etl.py"]
+CMD ["python", "etl.py"]
 
 
 
